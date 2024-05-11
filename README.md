@@ -1,8 +1,10 @@
 # Reversi Game Repository
-Welcome to the Reversi Game Repository! This repository contains all the files necessary to play the classic board game Reversi, also known as Othello. Reversi is a two-player strategy game played on an 8x8 grid with discs that are light on one side and dark on the other. The objective of the game is to have the majority of discs turned to display your color when the last playable empty square is filled.
+Welcome to the Reversi Game Repository! This repository contains all the files necessary to play the classic board game Reversi, also known as Othello. Reversi is a two-player strategy game played on an 8x8 grid with discs that are light on one side and dark on the other. The objective of the game is to have the majority of discs turned to display your colour when the last playable empty square is filled.
 
 ## Files Included:
-- Reversi.java: This Java file contains the main implementation of the Reversi game. It includes the game logic, board setup, player moves, and the core functionality to play the game.
-- Player.java: This Java file defines the Player class, which represents a player in the Reversi game. It includes methods for making moves and calculating available moves.
-- Board.java: This Java file defines the Board class, which represents the game board in Reversi. It includes methods for setting up the board, checking for valid moves, flipping discs, and checking for a winner.
-- Main.java: This Java file serves as the entry point to start the Reversi game. It imports the necessary classes from the other files and initiates the game loop.
+- GUIView.java: This file creates the graphical user interface for the Reversi game, providing separate frames for white and black players with buttons for AI moves, game restart, and labels for feedback messages. It dynamically updates the interface to reflect the current game state and delivers player feedback during gameplay.
+- GUIViewBoardSquare.java: This file defines a custom JButton representing a square on the Reversi game board. It handles user clicks, updates the square's status based on the player's move, and visually represents the state of each square with coloured circles.
+- ReversiController.java: This file manages the game logic for Reversi, implementing methods to initialize the game, handle player moves, update the game state, and determine the winner. It also provides functionality for automated moves by the computer player and ends the game when there are no more valid moves or the board is full.
+- IntTuple.java: This file defines a simple data structure representing an integer tuple, with x and y coordinates. It is used for the AI button.
+- SimpleModel.java: This file provides methods to initialize the game board, clear it, and retrieve or modify the contents of individual squares. It also manages the current player, and game status, and provides getters and setters for these properties. This simple model serves as the backbone for maintaining the game state.
+- ReversiMain.java: This file serves as the entry point to start the Reversi game. It imports the necessary classes from the other files and initiates the game loop.
